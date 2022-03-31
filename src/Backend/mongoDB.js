@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 const data = require("../Data/courses.json");
 
-var mongoDB = "mongodb://127.0.0.1:27017/basic-mern-app";
+var mongoDB = process.env.REACT_APP_MongoURL;
 
 //Get the default connection
 var db = mongoose.connection;
