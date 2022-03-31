@@ -1,6 +1,6 @@
 FROM node:latest
-COPY . /hello-educative
-RUN cd /hello-educative; npm install --legacy-peer-deps
+COPY . /mern-project
+RUN cd /mern-project; npm install --legacy-peer-deps
 EXPOSE 3000
-WORKDIR /hello-educative 
+WORKDIR /mern-project
 ENTRYPOINT ["npm", "start"]  
