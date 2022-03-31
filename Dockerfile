@@ -1,7 +1,6 @@
 FROM node:latest
-COPY . /app
-RUN cd /app
 WORKDIR /app
-RUN npm --verbose install
+COPY . /app
+RUN npm install
 EXPOSE 3000
 ENTRYPOINT ["npm", "start"]  
