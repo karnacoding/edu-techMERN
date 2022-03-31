@@ -27,10 +27,9 @@
   },
   "scripts": {
     "start": "set PORT=4000 && react-scripts start",
-    "build": "sh -ac '. ./.env.${REACT_APP_ENV}; react-scripts build",
+    "build": "REACT_APP_ENV=production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:production": "REACT_APP_ENV=production npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
