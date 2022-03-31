@@ -1,6 +1,6 @@
 FROM node:latest
-WORKDIR /app
-COPY . /app
-RUN npm install
+COPY . /hello-educative
+RUN cd /hello-educative; npm install --legacy-peer-deps
 EXPOSE 3000
+WORKDIR /hello-educative 
 ENTRYPOINT ["npm", "start"]  
