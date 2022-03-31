@@ -41,7 +41,7 @@ jobs:
         run: |
           npm run build
           npm run test
-        emv:
+        env:
           CI: false
   push_to_Docker_Hub:
       # The type of runner that the job will run on
